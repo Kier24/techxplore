@@ -4,3 +4,6 @@ grocery-bill:
       enabled: false
     listOfServers: localhost:9090,localhost:9091,localhost:9092
     ServerListRefreshInterval: 15000
+
+server:
+  port: 7070

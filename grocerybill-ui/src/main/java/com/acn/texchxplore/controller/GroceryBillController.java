@@ -7,11 +7,13 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
+@RequestMapping("/techxplore")
 @RibbonClient(name = "grocery-bill",configuration = GroceryBillConfiguration.class)
 public class GroceryBillController {
 
